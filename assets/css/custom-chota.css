@@ -1,0 +1,107 @@
+@import url(chota.css);
+
+:root {
+  --grid-maxWidth: 720px;
+  --navbar-height: 5em;
+  --color-primary: #0028a5;
+  --color-secondary: #df6019;
+}
+
+html body {
+    margin-top: calc(1.5 * var(--navbar-height));
+    font-family: "Arial";
+    line-height: 1.4em;
+}
+
+h1, h2, h3 {
+    color: var(--color-primary);
+    font-family: "Palatino Lintype";
+    font-weight: bold;
+}
+
+/* body.dark {
+    --bg-color: #000;
+    --bg-secondary-color: #131316;
+    --font-color: #f5f5f5;
+    --color-grey: #ccc;
+    --color-darkGrey: #777;
+} */
+
+.nav {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    max-width: var(--grid-maxWidth);
+    height: var(--navbar-height);
+    z-index: 10;
+}
+
+.row > .col-contact {
+    display: flex;
+    align-items: center;
+}
+
+.col .card {
+    width: 100%;
+}
+
+figure.portrait img {
+    border-radius: 50%;
+}
+
+figure.logo {
+    margin: 0;
+}
+
+a {
+    color: var(--color-secondary);
+}
+
+li a {
+    color: black;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+.nav .nav-left a.brand {
+    font-family: "Palatino Linotype";
+    font-size: 2.0em;
+    font-weight: bold;
+    padding-left: 0;
+    color: var(--color-primary);
+}
+
+ul.contact {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+ul.contact li i {
+    min-width: 20px;
+}
+
+i.fas, i.fab {
+    color: var(--color-secondary);
+}
+
+i.rotate-45 {
+    rotate: 45deg;
+}
+
+section {
+    margin: 50px 0;
+}
+
+.width-80 {
+    max-width: 80%;
+}
